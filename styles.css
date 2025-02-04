@@ -71,3 +71,26 @@ nav ul li a:hover {
 .btn:hover {
   background: #00cc66;
 }
+
+/* Projects Section */
+.projects {
+  padding: 50px 20px;
+  background: #1e1e2f;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #2a2a40;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
