@@ -4,8 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unity Game Developer Portfolio</title>
+  <title>Taimoor's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -22,6 +28,7 @@
 
   <!-- Home Section -->
   <section id="home" class="home">
+    <div id="particles-js"></div> <!-- Particle.js Background -->
     <div class="home-content">
       <h1>Welcome to My Game Dev Portfolio</h1>
       <p>Creating immersive and interactive experiences with Unity.</p>
@@ -29,23 +36,125 @@
     </div>
   </section>
 
+  <!-- About Section -->
+  <section id="about" class="about" data-aos="fade-up">
+    <div class="about-content">
+      <img src="assets/your-image.jpg" alt="Your Name" class="about-image" data-aos="zoom-in">
+      <h2>About Me</h2>
+      <p>I'm a passionate Unity game developer with experience in creating 2D and 3D games. I love solving complex
+        problems and bringing ideas to life.</p>
+    </div>
+  </section>
+
   <!-- Projects Section -->
   <section id="projects" class="projects">
-    <h2>My Projects</h2>
+    <h2 data-aos="fade-up">My Projects</h2>
     <div class="project-grid">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>Description of Project 1.</p>
+      <!-- Project 1 -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-media">
+          <!-- Swiper Carousel -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/project1-screenshot1.png" alt="Project 1 Screenshot 1">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/project1-screenshot2.png" alt="Project 1 Screenshot 2">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/project1-screenshot3.png" alt="Project 1 Screenshot 3">
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>RisingSun</h3>
+          <p>A narrative RPG shooter about a young Palestinian boy’s transformation during the Israeli invasion.
+            Experience six
+            emotional chapters with resource management, combat, and strategy. Raise awareness of the Palestinian
+            struggle through
+            immersive storytelling and innovative gameplay.</p>
+          <a href="project1-details.html" class="btn">View Details</a>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Description of Project 2.</p>
+
+      <!-- Project 2 -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-media">
+          <!-- Swiper Carousel -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/project2-screenshot1.png" alt="Project 2 Screenshot 1">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/project2-screenshot2.png" alt="Project 2 Screenshot 2">
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Flappy Bird</h3>
+          <p>This is a 2D clone of the popular game Flappy Bird. The player controls a bird and must navigate it through
+            a series of
+            pipes without hitting them. Each successful pass through a pair of pipes earns the player one point. The
+            game ends if
+            the bird collides with a pipe or if it falls below the screen.</p>
+          <a href="project2-details.html" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-media">
+          <!-- Swiper Carousel -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/project3-screenshot1.png" alt="Project 3 Screenshot 1">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/project3-screenshot2.png" alt="Project 3 Screenshot 2">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/project3-screenshot3.png" alt="Project 3 Screenshot 3">
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Grid Color Craze</h3>
+          <p>A simple painting game made as an assignment during the first month my internship at Narsun Studios. The
+            game is
+            designed to paint the 2d texture having UV map of the object to be painted. The user paints the UV map of
+            the object and
+            the object gets painted automatically in the 3d View. The unwrapping of the texture was an intense but
+            rewarding
+            experience.</p>
+          <a href="project3-details.html" class="btn">View Details</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="skills">
+  <section id="skills" class="skills" data-aos="fade-up">
     <h2>Skills</h2>
     <div class="skills-grid">
       <div class="skill">Unity</div>
@@ -56,16 +165,42 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact" data-aos="fade-up">
     <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
+    <form action="https://formspree.io/f/mldgnqdv" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <a href="https://github.com/taimoorsiddique13" target="_blank" class="social-link">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/taimoor-siddique" target="_blank" class="social-link">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://taimoorsiddiq.itch.io/" target="_blank" class="social-link">
+        <i class="fab fa-itch-io"></i>
+      </a>
+    </div>
   </section>
 
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn">↑</button>
+
+  <!-- Three.js Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- GSAP Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <!-- Swiper.js Script -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Particle.js Script -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom Script -->
   <script src="script.js"></script>
 </body>
 
