@@ -94,3 +94,41 @@ nav ul li a:hover {
 .project-card:hover {
   transform: translateY(-10px);
 }
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+
+  /* Navigation */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Home Section */
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  /* Projects Section */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Skills Section */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact Section */
+  form {
+    width: 90%;
+  }
+}
