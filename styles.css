@@ -120,6 +120,40 @@ nav ul li a:hover {
   color: #1e1e2f;
 }
 
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  background: #1e1e2f;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background: #00ff88;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #00cc66;
+}
+
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
 
