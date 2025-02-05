@@ -116,7 +116,7 @@ If you have any questions or feedback, feel free to reach out:
 
 - **Email**: taimoorulhassansiddique.13@gmail.com
 - **GitHub**: [taimoorsiddique13](https://github.com/taimoorsiddique13)
-- **LinkedIn**: [Taimoor Siddique](www.linkedin.com/in/taimoor-siddique)
+- **LinkedIn**: [Taimoor Siddique](https://www.linkedin.com/in/taimoor-siddique)
 
 Enjoy the project! 🚀
 
